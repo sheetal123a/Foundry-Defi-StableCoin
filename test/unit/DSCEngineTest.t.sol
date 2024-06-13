@@ -48,19 +48,7 @@ contract DSCEngineTest is StdCheats, Test {
         if (block.chainid == 31_337) {
             vm.deal(user, STARTING_USER_BALANCE);
         }
-        // Should we put our integration tests here?
-        // else {
-        //     user = vm.addr(deployerKey);
-        //     ERC20Mock mockErc = new ERC20Mock("MOCK", "MOCK", user, 100e18);
-        //     MockV3Aggregator aggregatorMock = new MockV3Aggregator(
-        //         helperConfig.DECIMALS(),
-        //         helperConfig.ETH_USD_PRICE()
-        //     );
-        //     vm.etch(weth, address(mockErc).code);
-        //     vm.etch(wbtc, address(mockErc).code);
-        //     vm.etch(ethUsdPriceFeed, address(aggregatorMock).code);
-        //     vm.etch(btcUsdPriceFeed, address(aggregatorMock).code);
-        // }
+       }
         ERC20Mock(weth).mint(user, STARTING_USER_BALANCE);
         ERC20Mock(wbtc).mint(user, STARTING_USER_BALANCE);
     }
