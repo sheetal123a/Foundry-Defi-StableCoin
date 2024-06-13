@@ -208,9 +208,6 @@ contract DSCEngine is ReentrancyGuard {
      * @notice: You will get a 10% LIQUIDATION_BONUS for taking the users funds.
     * @notice: This function working assumes that the protocol will be roughly 150% overcollateralized in order for this
     to work.
-    * @notice: A known bug would be if the protocol was only 100% collateralized, we wouldn't be able to liquidate
-    anyone.
-     * For example, if the price of the collateral plummeted before anyone could be liquidated.
      */
     function liquidate(
         address collateral,
