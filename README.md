@@ -14,8 +14,6 @@ This project is meant to be a stablecoin where users can deposit WETH and WBTC i
 - [Getting Started](#getting-started)
   - [Requirements](#requirements)
   - [Quickstart](#quickstart)
-- [Updates](#updates)
-- [Usage](#usage)
   - [Start a local node](#start-a-local-node)
   - [Deploy](#deploy)
   - [Deploy - Other Network](#deploy---other-network)
@@ -44,11 +42,6 @@ git clone https://github.com/sheetal123a/Foundry-Defi-StableCoin.git
 forge build
 ```
 
-# Updates
-
-- The latest version of openzeppelin-contracts has changes in the ERC20Mock file. To follow along with the course, you need to install version 4.8.3 which can be done by `forge install openzeppelin/openzeppelin-contracts@v4.8.3 --no-commit` instead of `forge install openzeppelin/openzeppelin-contracts --no-commit`
-
-# Usage
 
 ## Start a local node
 
